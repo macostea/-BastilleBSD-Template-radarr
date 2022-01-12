@@ -1,11 +1,5 @@
-PKG curl
-
-CP root /
-CP usr /
-
-CMD /root/bootstrap-radarr.sh
+PKG radarr
 
 SYSRC radarr_enable=YES
-SYSRC radarr_data_dir=/config
 
 SERVICE radarr restart
